@@ -12,13 +12,13 @@ def unificar_e_converter_para_csv():
             with open(arquivo, "r", encoding="utf-8") as f:
                 conteudo_unificado += f.read()
 
-        # Lê o arquivo unificado com tabulação como delimitador
+        ''' Lê o arquivo unificado com tabulação como delimitador '''
         df = pd.read_csv(io.StringIO(conteudo_unificado), sep='\t', encoding="utf-8", header=None)
 
-        # Remover colunas vazias
+        ''' Remover colunas vazias '''
         df = df.dropna(axis=1, how='all')
         
-        # Salva o DataFrame como CSV com separação por ponto e vírgula
+        ''' Salva o DataFrame como CSV '''
         df.to_csv("unificado.csv", index=False, header=False, sep=';', encoding="utf-8-sig")
         print("Arquivo CSV criado com sucesso: unificado.csv")
         
