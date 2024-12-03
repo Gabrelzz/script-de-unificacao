@@ -10,6 +10,20 @@ Para poder utilizá-lo da melhor forma segue o passo a passo.
 - Execute o script.
 - Pronto! seus arquivos .txt estão transformados em um único arquivo ".csv".
 
+# Explicação
+
+Estou utilizando a biblioteca pandas, glob e io.
+
+pandas -> para criação do DataFrame
+
+glob -> ler todos os arquivos ".txt"
+
+io -> para não precisar criar um arquivo ".txt"
+
+Este script ele unifica vários arquivos ".txt" que estiver presente no mesmo local que o arquivo do script, ele unifica guarda a informação e transforma em um único arquivo ".csv".
+
+Ele está configurado para ler o arquivos ".txt" com delimitador "tabulação" e na codificação "utf-8", excluir algumas colunas vazias que estavam sendo criadas e salvar o DataFrame como ".csv" com separação por ponto e vírgula e utilizando a codificação "utf-8-sig" para melhor adaptação ao Excel.
+
 # Recomendações
 
 Utilizar o pyinstaller para caso queira fazer a criação de um executável.
