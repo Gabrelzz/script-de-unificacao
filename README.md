@@ -2,13 +2,13 @@
  
 Olá, seja bem vindo ao meu script de unificação.
 
-Explicação da funcionalidade do script:
+Para poder utilizá-lo da melhor forma segue o passo a passo.
 
-Este script ele lê todos os arquivos ".txt" que possui na mesma pasta que o script está localizado.
-
-Em seguida ele unifica todos os arquivos .txt pelo demilitador "tabulação" e ele pega todos os 
-
-arquivos unificados e coloca todas as informações em um único arquivo csv com o nome de: "unificado.txt".
+- Crie uma pasta.
+- Coloque o executável do script nesta pasta.
+- Coloque todos os arquivos .txt que você deseja unificar.
+- Execute o script.
+- Pronto! seus arquivos .txt estão transformados em um único arquivo ".csv".
 
 # Recomendações
 
