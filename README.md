@@ -33,4 +33,5 @@ Baixar e extrair o UPX caso queira um script mais leve (Sem UPX 35.000KB | Com U
 (Baixe o UPX por aqui "https://upx.github.io/", descompacte ele e utilize o diretório desta pasta que está descompactada no comando a ser utilizado para a criação do executável)
 
 comando utilizado para a criação do executável:
+
 "pyinstaller --onefile --icon=icone-unificar.ico --noconsole --upx-dir "diretorio/da/pasta/que/esta/instalado/o/upx" .\unificar.py"
