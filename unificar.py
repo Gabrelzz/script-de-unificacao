@@ -15,7 +15,7 @@ def unificar_e_converter_para_csv():
         ''' Lê o arquivo unificado com tabulação como delimitador '''
         df = pd.read_csv(io.StringIO(conteudo_unificado), sep='\t', encoding="utf-8", header=None)
 
-        ''' Remover colunas vazias '''
+        ''' Remove as colunas vazias '''
         df = df.dropna(axis=1, how='all')
         
         ''' Salva o DataFrame como CSV '''
