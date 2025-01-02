@@ -9,7 +9,7 @@ def unificar_e_converter_para_csv():
         conteudo_unificado = ""
 
         for arquivo in arquivos_txt:
-            with open(arquivo, "r", encoding="ISO-8859-1") as f:
+            with open(arquivo, "r", encoding="utf-8") as f:
                 conteudo_unificado += f.read()
 
         ''' Lê o arquivo unificado com tabulação como delimitador '''
